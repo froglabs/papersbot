@@ -26,18 +26,12 @@ import tweepy
 
 
 # This is the regular expression that selects the papers of interest
-regex = re.compile(r"""
-  (   \b(MOF|MOFs|COF|COFs|ZIF|ZIFs)\b
-    | metal.organic.framework
-    | covalent.organic.framework
-    | metal–organic.framework
-    | covalent–organic.framework
-    | imidazolate.framework
-    | porous.coordination.polymer
-    | framework.material
-  )
-  """, re.IGNORECASE | re.VERBOSE)
-
+regex = re.compile(r"""( geomstats | 
+                         riemannian.statistics | 
+                         hyperbolic.space | 
+                         riemannian.metric
+                       )
+                   """, re.IGNORECASE | re.VERBOSE)
 
 # We select entries based on title or summary (abstract, for some feeds)
 def entryMatches(entry):
