@@ -5,9 +5,9 @@
 #
 # purpose:  read journal RSS feeds and tweet selected entries
 # license:  MIT License
-# author:   François-Xavier Coudert
-# e-mail:   fxcoudert@gmail.com
-#
+# author:   Nina Miolane
+# e-mail:   nmiolane@gmail.com
+# inspired by: https://github.com/fxcoudert/PapersBot
 
 import imghdr
 import json
