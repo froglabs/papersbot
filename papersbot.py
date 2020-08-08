@@ -26,10 +26,26 @@ import tweepy
 
 
 # This is the regular expression that selects the papers of interest
-regex = re.compile(r"""( geomstats | 
-                         riemannian.statistics | 
-                         hyperbolic.space | 
-                         riemannian.metric
+regex = re.compile(r"""( geometric.deep.learning |
+                         geometric.machine.learning |
+                         geometric.neural.net |
+                         geometric.statistics |
+                         geomstats | 
+                         geoopt |
+                         hyperbolic.data |
+                         non-euclidean.data |
+                         (?=.*non-euclidean)(?=.*deep.learning) |
+                         (?=.*non-euclidean)(?=.*machine.learning) |
+                         (?=.*non-euclidean)(?=.*neural.net) |
+                         (?=.*non-euclidean)(?=.*statistics) |
+                         manopt |
+                         mctorch |
+                         (?=.*riemannian)(?=.*data) |
+                         (?=.*riemannian)(?=.*deep.learning) |
+                         (?=.*riemannian)(?=.*statistic) |
+                         (?=.*riemannian)(?=.*machine.learning) |
+                         (?=.*riemannian)(?=.*neural.net) |
+                         theanogeometry
                        )
                    """, re.IGNORECASE | re.VERBOSE)
 
